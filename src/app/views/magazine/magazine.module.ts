@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
-import { NewMagazineComponent } from './new-magazine.component';
+import { MagazineComponent } from './magazine.component';
+import { StudyComponent } from './study.component';
 import { MagazineRoutingModule } from './magazine-routing.module';
 
 @NgModule({
   imports: [
     MagazineRoutingModule,
-    ChartsModule
+    HttpClientModule,
+    ChartsModule,
+    CommonModule
   ],
-  declarations: [ NewMagazineComponent ]
+  declarations: [ 
+    MagazineComponent, 
+    StudyComponent 
+  ]
 })
 export class MagazineModule { }

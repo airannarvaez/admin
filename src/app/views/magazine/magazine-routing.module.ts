@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NewMagazineComponent } from './new-magazine.component';
+import { MagazineComponent } from './magazine.component';
+import { StudyComponent } from './study.component';
 
 const routes: Routes = [
   {
@@ -11,10 +12,17 @@ const routes: Routes = [
     },
     children: [
       {
-        path: 'new-magazine',
-        component: NewMagazineComponent,
+        path: 'magazine',
+        component: MagazineComponent,
         data: {
-          title: 'Nueva Revista'
+          title: 'Fuentes'
+        }
+      },
+      {
+        path: 'study',
+        component: StudyComponent,
+        data: {
+          title: 'Estado de Estudio'
         }
       }
     ]

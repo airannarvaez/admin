@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: 'new-magazine.component.html'
+  templateUrl: 'magazine.component.html'
 })
-export class NewMagazineComponent {
+export class MagazineComponent {
 
   // lineChart
   public lineChartData: Array<any> = [

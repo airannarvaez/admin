@@ -3,6 +3,17 @@
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
+import { Injectable } from '@angular/core';
+
+
 export const environment = {
   production: false
 };
+
+
+@Injectable()
+export class Configuration {
+  public Server = 'http://desarrollo.azaldu.com/';
+  public ApiUrl = 'api/';
+  public ServerWithApiUrl = this.Server + this.ApiUrl;
+}

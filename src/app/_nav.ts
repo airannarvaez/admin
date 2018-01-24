@@ -18,9 +18,24 @@ export const navigation = [
     icon: 'fa fa-leanpub',
     children: [
       {
-        name: 'Nueva Revista',
-        url: '/magazine/new-magazine',
-        icon: 'fa fa-plus-circle'
+        name: 'Fuentes',
+        url: '/magazine/magazine',
+        icon: 'fa fa-clone'
+      },
+      {
+        name: 'Ediciones y Datos',
+        url: '/magazine/editions-data',
+        icon: 'fa fa-database'
+      },
+      {
+        name: 'Estado del Estudio',
+        url: '/magazine/study',
+        icon: 'fa fa-bar-chart'
+      },
+      {
+        name: 'Subir CSV',
+        url: '/magazine/csv',
+        icon: 'fa fa-cloud-upload'
       }
     ]
   },
@@ -31,12 +46,12 @@ export const navigation = [
   {
     name: 'Traducciones',
     url: '/translations',
-    icon: 'icon-book-open',
+    icon: 'fa fa-font',
     children: [
       {
         name: 'Nombres de Feature',
         url: '/translations/features',
-        icon: 'icon-puzzle'
+        icon: 'icon-equalizer'
       }
     ]
   },
@@ -87,18 +102,5 @@ export const navigation = [
         icon: 'icon-star'
       }
     ]
-  },
-  {
-    name: 'Download CoreUI',
-    url: 'http://coreui.io/angular/',
-    icon: 'icon-cloud-download',
-    class: 'mt-auto',
-    variant: 'success'
-  },
-  {
-    name: 'Try CoreUI PRO',
-    url: 'http://coreui.io/pro/angular/',
-    icon: 'icon-layers',
-    variant: 'danger'
   }
 ];
